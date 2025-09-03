@@ -70,6 +70,19 @@
             <p><b>Your Task:</b></p>
             <ul>
                 <li>Explain Git concepts in your own words (as if teaching someone new).</li>
+		<p><b>Git Concepts in Simple Words:</b></p>
+			<li>Git is like a smart notebook for your code. Every time you make changes, Git lets you save a snapshot so you can go back if something breaks.</li>
+			<li>Repository (repo): Think of it as a folder where your project lives, along with all its versions.</li>
+			<li>Working Directory: This is the current state of your files—what you're editing right now.</li>
+			<li>Staging Area: Before saving changes, you put them in a “waiting room” (staging). It’s like prepping files before hitting save.</li>
+			<li>Commit: This is the actual save. You take a snapshot of your staged changes and write a short message explaining what you did.</li>
+			<li>git status: Shows what’s changed, what’s staged, and what’s still waiting to be staged. Like checking your to-do list.</li>
+			<li>git log: A timeline of all your commits—who made them, when, and what changed.</li>
+			<li>Branch: A separate path where you can experiment without messing up the main code. Like writing a new chapter without changing the original story.</li>
+			<li>Merge: Combines your branch back into the main code once everything works. Like adding your new chapter to the book.</li>
+			<li>GitHub: An online place to store your Git repos, collaborate with others, and trigger automated tasks like testing and deployment.</li>
+	</ul>
+
                 <li>Connect at least one Git concept with a real-world debugging scenario.
                     <small>(e.g., “If an application suddenly stops connecting to the database, I can use
                         <code>git log</code> to
@@ -80,12 +93,13 @@
 
             <p class="placeholder">[
 
-Real-Life Debugging Example: Imagine your app suddenly stops working—it can’t connect to the database. You check the logs and see an error: “Connection refused”. You suspect someone changed the database settings.
-Command: 'git log config/database.yml'
---> This shows who last edited the file and when.
+<p><b>Real-Life Debugging Example:</b></p>
+<ul> Imagine your app suddenly stops working—it can’t connect to the database. You check the logs and see an error: “Connection refused”. You suspect someone changed the database settings.
+<li>Command: 'git log config/database.yml'</li>
+<br>✦This shows who last edited the file and when.
 
-Command: 'git diff HEAD~1 HEAD'
---> Now you see the exact change—maybe someone accidentally typed the wrong password. You didn’t write the code, but Git helps you trace the issue like a detective.
+<li>Command: 'git diff HEAD~1 HEAD'</li>
+<br>✦Now you see the exact change—maybe someone accidentally typed the wrong password. You didn’t write the code, but Git helps you trace the issue like a detective.
 
 Git Commands for Debugging
 Command	What It Does	Real-Life Use Case
